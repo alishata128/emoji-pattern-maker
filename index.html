@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Pattern Maker</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="./js/html2canvas.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <a href="#" id="open">></a>
+        <div class="sidebar">
+            <a href="#" id="close">x</a>
+            <p class="title">
+                Emoji😉<br>Pattern<br>Maker
+            </p>
+            <ul>
+                <li>
+                    <label for="range">Emoji Count:</label>
+                    <input type="range" id="emoji-count" min="5" max="500" />
+                </li>
+
+                <li>
+                    <label for="text">Type Emoji:</label>
+                    <!-- <input type="text" id="emojiInput"> -->
+                    <div>
+                        <select name="" id="emoji-input"></select>
+                        <a href="#" id="randomEmojis">🤡</a>
+                    </div>
+
+                </li>
+                <li>
+                    <label for="">Canvas rotation:</label>
+                    <input type="range" value="0" min="-180" max="180" id="canvas-rotation">
+                </li>
+
+                <li>
+                    <label for="">Canvas zoom:</label>
+                    <input type="range" value="1" min="0" max="10" step="0.1" id="canvas-zoom">
+                </li>
+
+
+                <li>
+                    <label for="">Emoji size:</label>
+                    <input type="range" value="1" min="1" max="100" id="emoji-size">
+                </li>
+                <li>
+                    <label for="">Emoji rotation:</label>
+                    <input type="range" value="0" min="-180" max="180" id="emoji-rotation">
+                </li>
+
+                <li>
+                    <label for="">Top:</label>
+                    <input type="range" value="0" min="-500" max="500" id="top">
+                </li>
+
+                <li>
+                    <label for="">Left:</label>
+                    <input type="range" value="0" min="-500" max="500" id="left">
+                </li>
+
+                <li>
+                    <label for="">W:</label>
+                    <input type="number" value="500" min="100" max="2000" id="width" class="measure">
+                    <label for="">H:</label>
+                    <input type="number" value="500" min="100" max="2000" id="height" class="measure">
+                </li>
+            </ul>
+
+        </div>
+        <a href="#" class="save">Save!</a>
+        <div id="myCanvas"></div>
+        <!-- <canvas id="myCanvas"></canvas> -->
+    </div>
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>
